@@ -1,0 +1,33 @@
+{
+  "name": "sensitive-words",
+  "version": "1.0.0",
+  "description": "屏蔽字库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify game.js > filter.js && babel filter.js -o filter.es5.js && uglifyjs filter.es5.js -m -o filter.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strangem/sensitive-words.git"
+  },
+  "keywords": [
+    "sensitive",
+    "words"
+  ],
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": []
+  },
+  "author": "lichen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strangem/sensitive-words/issues"
+  },
+  "homepage": "https://github.com/strangem/sensitive-words#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
